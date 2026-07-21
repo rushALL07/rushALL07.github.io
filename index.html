@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Jordan Cole — Frontend Engineer. A schematic-styled portfolio page.">
+<title>Jordan Cole — Frontend Engineer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="frame">
+
+  <header class="title-block">
+    <p class="tag">&lt;header&gt;</p>
+    <span class="doc-id">SHEET 01 / 01 — PORTFOLIO — REV. A — <time datetime="2026-07">JUL 2026</time></span>
+    <h1>Jordan Cole</h1>
+    <p class="subtitle">Frontend engineer. I build interfaces that hold up under real use — <mark>fast</mark>, accessible, and easy to maintain.</p>
+  </header>
+
+  <nav aria-label="Primary">
+    <p class="tag">&lt;nav&gt;</p>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#timeline">Timeline</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section id="about" aria-labelledby="about-h">
+      <p class="tag">&lt;section id="about"&gt;</p>
+      <h2 id="about-h">About</h2>
+      <figure>
+        <svg width="110" height="110" viewBox="0 0 110 110" role="img" aria-label="Abstract avatar silhouette">
+          <rect width="110" height="110" fill="#123A5C"/>
+          <circle cx="55" cy="42" r="20" fill="#5FD0C6" opacity="0.85"/>
+          <path d="M20 100 C20 70 90 70 90 100 Z" fill="#5FD0C6" opacity="0.85"/>
+        </svg>
+        <figcaption>&lt;figure&gt; + &lt;figcaption&gt; — inline SVG avatar, no external image request needed.</figcaption>
+      </figure>
+      <p>
+        I'm a frontend engineer based in <abbr title="Sydney, New South Wales">SYD</abbr>, focused on design systems
+        and performance. Previously shipped UI for two Series&nbsp;B startups<sup>1</sup> and one open-source
+        component library. This page itself is a working demo — every region is labeled with the tag that renders it.
+      </p>
+    </section>
+
+    <section id="skills" aria-labelledby="skills-h">
+      <p class="tag">&lt;section id="skills"&gt;</p>
+      <h2 id="skills-h">Skills</h2>
+      <table>
+        <caption>&lt;table&gt; — proficiency by area, self-rated</caption>
+        <thead>
+          <tr>
+            <th scope="col">Area</th>
+            <th scope="col">Level</th>
+            <th scope="col">Years</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML &amp; CSS</td>
+            <td><meter min="0" max="100" value="92" aria-label="92 percent">92%</meter></td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <td>JavaScript / TypeScript</td>
+            <td><meter min="0" max="100" value="85" aria-label="85 percent">85%</meter></td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>Accessibility</td>
+            <td><meter min="0" max="100" value="78" aria-label="78 percent">78%</meter></td>
+            <td>4</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-h">
+      <p class="tag">&lt;section id="projects"&gt; &nbsp;/&nbsp; &lt;article&gt;</p>
+      <h2 id="projects-h">Projects</h2>
+      <div class="projects-grid">
+        <article>
+          <h3>Kit</h3>
+          <p>A small, accessible component library built on native HTML elements first.</p>
+          <ul>
+            <li>TypeScript</li>
+            <li>a11y</li>
+            <li>OSS</li>
+          </ul>
+          <a href="#">View repository →</a>
+        </article>
+        <article>
+          <h3>Field Notes</h3>
+          <p>A static-site generator tuned for long-form technical writing.</p>
+          <ul>
+            <li>Rust</li>
+            <li>CLI</li>
+          </ul>
+          <a href="#">View repository →</a>
+        </article>
+        <article>
+          <h3>Grid</h3>
+          <p>Layout debugging tool that overlays a live blueprint grid on any page.</p>
+          <ul>
+            <li>JavaScript</li>
+            <li>DevTools</li>
+          </ul>
+          <a href="#">View repository →</a>
+        </article>
+      </div>
+    </section>
+
+    <aside aria-labelledby="now-h">
+      <p class="tag">&lt;aside&gt; &nbsp;/&nbsp; &lt;dl&gt;</p>
+      <h2 id="now-h">Now</h2>
+      <dl>
+        <div><dt>Reading</dt><dd>Refactoring UI</dd></div>
+        <div><dt>Learning</dt><dd>WebGPU basics</dd></div>
+        <div><dt>Status</dt><dd>Open to freelance work</dd></div>
+      </dl>
+    </aside>
+
+    <section id="timeline" aria-labelledby="timeline-h">
+      <p class="tag">&lt;section id="timeline"&gt; &nbsp;/&nbsp; &lt;details&gt;</p>
+      <h2 id="timeline-h">Timeline</h2>
+
+      <details open>
+        <summary>Senior Frontend Engineer, Northbeam <time datetime="2024">2024 — Present</time></summary>
+        <p>Leading the design-system rebuild and mentoring two junior engineers.</p>
+      </details>
+
+      <details>
+        <summary>Frontend Engineer, Loft Labs <time datetime="2021">2021 — 2024</time></summary>
+        <p>Owned the marketing site and onboarding flow end to end.</p>
+      </details>
+
+      <details>
+        <summary>BSc Computer Science <time datetime="2021">2017 — 2021</time></summary>
+        <p>Focused on human-computer interaction and typography.</p>
+      </details>
+    </section>
+
+    <section id="testimonial" aria-labelledby="testimonial-h">
+      <p class="tag">&lt;blockquote&gt; &nbsp;/&nbsp; &lt;cite&gt;</p>
+      <h2 id="testimonial-h">Said kindly</h2>
+      <blockquote>
+        <p>Jordan is the rare engineer who treats markup as a design decision, not an afterthought.</p>
+        <cite>— Priya N., Engineering Manager</cite>
+      </blockquote>
+    </section>
+
+    <hr>
+
+    <section id="snippet" aria-labelledby="snippet-h">
+      <p class="tag">&lt;pre&gt; &nbsp;/&nbsp; &lt;code&gt;</p>
+      <h2 id="snippet-h">A tiny example</h2>
+      <pre><code>&lt;button onclick="alert('hi')"&gt;
+  Say hi
+&lt;/button&gt;</code></pre>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-h">
+      <p class="tag">&lt;section id="contact"&gt; &nbsp;/&nbsp; &lt;form&gt;</p>
+      <h2 id="contact-h">Get in touch</h2>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Send a message</legend>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Ada Lovelace" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="ada@example.com" required>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="topic">Topic</label>
+            <select id="topic" name="topic">
+              <option value="freelance">Freelance project</option>
+              <option value="fulltime">Full-time role</option>
+              <option value="other">Something else</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="What are you building?"></textarea>
+            <span class="hint">No spam, I read every message myself.</span>
+          </div>
+
+          <div class="field checkbox-field">
+            <input type="checkbox" id="ok" name="ok">
+            <label for="ok" style="margin:0;">Okay to reply by email</label>
+          </div>
+
+          <button type="submit">Send message</button>
+        </fieldset>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p class="tag">&lt;footer&gt; &nbsp;/&nbsp; &lt;address&gt;</p>
+    <address>
+      <a href="mailto:hello@jordancole.dev">hello@jordancole.dev</a>
+      <a href="https://github.com/">GitHub</a>
+      <a href="https://linkedin.com/">LinkedIn</a>
+    </address>
+    <small>&copy; <time datetime="2026">2026</time> Jordan Cole. Built with plain HTML &amp; CSS — no framework.</small>
+  </footer>
+
+</div>
+</body>
+</html>
